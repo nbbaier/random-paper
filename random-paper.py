@@ -7,7 +7,7 @@ import random
 
 # Set up the arguments in
 parser = argparse.ArgumentParser()
-parser.add_argument("num", type=int, nargs="?", default=5)  # This added a
+parser.add_argument("num", type=int, nargs="?", default=5)
 parser.add_argument("-o", "--open", action="store_true")
 args = parser.parse_args()
 
@@ -21,7 +21,7 @@ os.chdir(dir)
 
 
 def get_papers():
-    """Loops througy an enumerated of files drawn from the list of papers
+    """Loops through an enumerated of files drawn from the list of papers
     This list is randomly generated and has its length set by args.num (default 5)
     If the -o/--open flag is provided, the papers are opened, if not, they're just printed
     """
